@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-ng-style',
   template: `
     <p [style.fontSize.px]="fSize">
-      Relacionar tamaño de fuente con evento
+      ng style reaccionando a evento click
     </p>
     <button class="btn btn-primary mr-1" (click)="fSize = fSize + 5">
       <i class='fa fa-plus'> </i>

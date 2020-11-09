@@ -1,0 +1,35 @@
+<div [ngClass]="alerta" class="alert" role="alert">
+    modificando las clases con ngClass
+</div>
+
+<button type="button" (click)="alerta = 'alert-info'" class="btn btn-info">class = info</button>
+<button type="button" (click)="alerta = 'alert-success'" class="btn btn-success ml-2">class = success</button>
+<br><br>
+<hr>
+
+<h3 [ngClass]="{ 'text-danger': propiedades.danger, 'text-info': !propiedades.danger }">
+    modificando una clase recibiendo el valor booleano desde el component.ts y modificando con ngClass ese booleano y la clase del button
+</h3>
+
+<button (click)="propiedades.danger = !propiedades.danger" type="button" name="button" class="btn" [ngClass]="{ 'btn-danger': propiedades.danger, 'btn-info': !propiedades.danger }">
+    cambiar
+</button>
+
+<br><br>
+<hr>
+<br>
+
+<h3>Boton con animacion guardar cambios</h3>
+
+<button (click)='ejecutar()' class="btn btn-primary" type="button" name='button' [disabled]='loading'>
+    <i [ngClass]="{ 'fa-save':!loading, 'fa-refresh fa-spin': loading }" class="fa " ></i>
+     <span *ngIf='!loading'>
+        guardar cambios
+    </span>
+    <span *ngIf='loading'>
+        espere por favor
+    </span>
+</button>
+
+<br><br>
+<hr>
