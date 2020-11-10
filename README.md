@@ -1,3 +1,6 @@
 # ANGULAR-tools-1
-Some simple code examples in Angular for daily use like data binding animated buttons and so
+Ejemplos de codigo de ANGULAR para botones con animaciones, scope, modificacion de clases, directivas personalizadas, etc
+
+instalar dependencias y arrancar servidor con ng serve
+
 
