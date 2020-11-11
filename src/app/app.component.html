@@ -1,21 +1,13 @@
+<app-navbar></app-navbar>
+
 <div class="container main-container">
     <h1>
         <small>Ejemplos codigo practicos de</small> Angular
     </h1>
     <hr>
-    <app-ng-style></app-ng-style>
-    <hr>
-    <app-css></app-css>
-    <p>parrafo en componente padre toma css de su componente</p>
+    <router-outlet></router-outlet>
     <br>
     <hr>
-    <app-clases></app-clases>
-    <br>
-    <div [appResaltado]="'orange'" class="container p-5">
-        <h4>
-            aplicar directiva personalizada con parametro declarado desde el html (hacer mouseenter)
-        </h4>
-    </div>
-    <br>
+
 
 </div>
